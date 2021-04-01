@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>Leeka</title>
+</head>
+<body>
+  <button id="hamburger-menu" onclick="toggleHamburgerMenu()">
+    <div class="menu-bar"></div>
+    <div class="menu-bar"></div>
+    <div class="menu-bar"></div>
+  </button>
+  <nav id="navigation">
+    <div id="links">
+      <a href="index.html">
+        Home
+      </a>
+      <a href="more-details">
+          In depth
+      </a>
+      <a href="contact.html">
+          Contact
+      </a>
+    </div>
+  </nav>
+  <div class="intro">
+    <div class="small-intro-text">
+      Leeka<br>
+      is a<br>
+    </div>
+    <div class="big-intro-text">
+      <p>Leakage</p>
+      <p>Detector</p>
+    </div>
+  </div>
+  <main>
+    <div class="features">
+      <p>It is designed to:</p>
+      <ul class="feature-list">
+        <li>Give real time process controll</li>
+        <li>Detect small streams or droplet of liquid</li>
+        <li>Be installed after a valve</li>
+        <li>Send an alarm if valve is leaking</li>
+      </ul>
+    </div>
+    <div class="base-info text-container">
+      <p>
+        The Leakage Detector is based on a patented leakage detection technology
+      </p>
+      <p>
+        The Leakage Detector is a standalone instrument
+      </p>
+      <p>
+        The Leakage Detector technology can also be build into a valve
+      </p>
+    </div>
+    <div class="upper-triangle"></div>
+    <div class="text-container color-breaker">
+      <h2>
+        Designed to improve process control
+      </h2>
+      <p>Control and minimize the risk of:</p>
+      <ul class="feature-list">
+        <li>Contamination of end product and cross contamination</li>
+        <li>Spillage and environmental damage</li>
+      </ul>
+      <div class="spacer"></div>
+      <p>Minimizing cost:</p>
+      <ul class="feature-list">
+        <li>Preventive maintenance</li>
+        <li>Cost due to spillage</li>
+      </ul>
+    </div>
+    <div class="lower-triangle"></div>
+  </main>
+</body>
+</html>
+
+<script>
+  function toggleHamburgerMenu() {
+    const nav = document.querySelector("#navigation");
+    const menuBars = document.querySelectorAll(".menu-bar");
+    if(nav.className == "nav-open") {
+      nav.classList.remove("nav-open");
+      nav.style.zIndex = -1;
+      nav.style.opacity = 0.0;
+      menuBars[0].classList.remove("rotate-menu-bar-positive");
+      menuBars[1].classList.remove("remove-menu-bar");
+      menuBars[2].classList.remove("rotate-menu-bar-negative");
+      return;
+    }
+    nav.style.zIndex = 1;
+    nav.style.opacity = 0.98;
+    nav.classList.add("nav-open");
+
+    // transform hamburger menu to close icon
+    menuBars[0].classList.add("rotate-menu-bar-positive");
+    menuBars[1].classList.add("remove-menu-bar");
+    menuBars[2].classList.add("rotate-menu-bar-negative");
+  }
+</script>

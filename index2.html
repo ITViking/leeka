@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <title>Leeka</title>
+</head>
+<body>
+  <button id="hamburger-menu" onclick="openHamburgerMenu()">
+    <div class="menu-bar"></div>
+    <div class="menu-bar"></div>
+    <div class="menu-bar"></div>
+  </button>
+  <nav id="navigation">
+    <div id="links">
+      <a href="/">
+        Home
+      </a>
+      <a href="/more-details">
+          In depth
+      </a>
+      <a href="/contact">
+          Kontakt
+      </a>
+    </div>
+  </nav>
+  <div class="intro">
+    <div class="small-intro-text">
+      Leeka<br>
+      is a<br>
+    </div>
+    <div class="big-intro-text">
+      <p>Leakage</p>
+      <p>Detector</p>
+    </div>
+  </div>
+  <main>
+    <div class="features">
+      <p>It is designed to</p>
+      <ul class="feature-list">
+        <li>Give real time process controll</li>
+        <li>Detect small streams or droplet of liquid</li>
+        <li>Be installed after a valve</li>
+        <li>Send an alarm if valve is leaking</li>
+      </ul>
+    </div>
+    <div class="upper-triangle"></div>
+    <div class="base-info">
+      <p>
+        The Leakage Detector is based on a patented leakage detection technology
+      </p>
+      <p>
+        The Leakage Detector is a standalone instrument
+      </p>
+      <p>
+        The Leakage Detector technology can also be build into a valve
+      </p>
+    </div>
+    <div class="lower-triangle"></div>
+  </main>
+</body>
+</html>
+
+<style>
+  body {
+    background-color: #f9f9f9;
+    font-size: 18px;
+    color: #131615;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  #hamburger-menu {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 100;
+    font-size: 36px;
+    background: transparent;
+    border-width: 0;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .menu-bar {
+    background: #252C2A;
+    height: 3px;
+    width: 30px;
+    margin-bottom: 7px;
+    position: relative;
+    transition: all 200ms ease;
+    opacity: 1;
+    top: 0;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 10%;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: -1;
+    opacity: 0.0;
+    transition: all 200ms ease;
+  }
+
+  .nav-open {
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0.6;
+  }
+  
+  #links {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    right: 40%;
+    position: absolute;
+  }
+
+  #links a {
+    font-size: 36px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #131615;
+  }
+
+  .intro {
+    height: 280px;
+    padding-top: 70px;
+    padding-left: 30px;
+  }
+
+  .small-intro-text {
+    font-size: 20px;
+  }
+
+  .big-intro-text {
+    margin-top: 10px;
+  }
+
+  .big-intro-text p {
+    font-weight: 700;
+    font-size: 40px;
+  }
+  
+  .features {
+    padding-left: 30px;
+  }
+
+  ul.feature-list {
+    list-style-type: none;
+  }
+
+  .feature-list li {
+    margin-bottom: 10px;
+  }
+
+  .feature-list li::before {
+    content: "-";
+    position: absolute;
+    margin-left: -15px;
+  }
+
+  .upper-triangle {
+    margin-top: 15px;
+    width: 0;
+    height: 0;
+    border-left: 500px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 20px solid #EBEBEB;
+  }
+
+  .lower-triangle {
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 500px solid transparent;
+    border-top: 20px solid #EBEBEB;
+  }
+
+  .base-info {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #131615;
+    background-color: #EBEBEB;
+  }
+
+</style>
+
+<script>
+  function openHamburgerMenu() {
+    const nav = document.querySelector("#navigation");
+    nav.style.zIndex = 1;
+    nav.style.opacity = 0.98;
+    nav.classList.add("nav-open");
+  }
+</script>

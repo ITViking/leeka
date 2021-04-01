@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>Contact - Leeka</title>
+</head>
+<body>
+  <button id="hamburger-menu" onclick="toggleHamburgerMenu()">
+    <div class="menu-bar"></div>
+    <div class="menu-bar"></div>
+    <div class="menu-bar"></div>
+  </button>
+  <nav id="navigation">
+    <div id="links">
+      <a href="index.html">
+        Home
+      </a>
+      <a href="more-details.html">
+          In depth
+      </a>
+      <a href="contact.html">
+          Contact
+      </a>
+    </div>
+  </nav>
+  <div class="intro">
+    <div class="small-intro-text">
+      Leeka<br>
+      was invented by<br>
+    </div>
+    <div class="big-intro-text">
+      <p>JBA</p>
+      <p>Consult</p>
+    </div>
+  </div>
+  <section>
+    <div class="features">
+      <p>JBA Consulting Aps operates within the process industry, specializing in:</p>
+      <ul class="feature-list">
+        <li>CIP/SIP</li>
+        <li>Pharmaceutical industry</li>
+        <li>Design, development and innovation</li>
+      </ul>
+    </div>
+    <div class="base-info text-container">
+      <h2>
+        Inventions and patents
+      </h2>
+      <p>
+        <strong>Tank Cleaning Nozzle</strong>, Tank Comprising it and a Method for Cleaning a Tank <br>
+        <em>Sold and in development phase</em>
+      </p>
+      <p>
+        A <strong>Liquid Detector</strong> and Method to Detect Liquid Leakage <br>
+        <em>Conceptional design phase</em>
+      </p>
+      <p>
+        <strong>Liquid sensor patent</strong>, covering a series of instruments <br>
+        <em>Starting phase</em>
+      </p>
+    </div>
+  </section>
+</body>
+</html>
+
+<script>
+  function toggleHamburgerMenu() {
+    const nav = document.querySelector("#navigation");
+    const menuBars = document.querySelectorAll(".menu-bar");
+    if(nav.className == "nav-open") {
+      nav.classList.remove("nav-open");
+      nav.style.zIndex = -1;
+      nav.style.opacity = 0.0;
+      menuBars[0].classList.remove("rotate-menu-bar-positive");
+      menuBars[1].classList.remove("remove-menu-bar");
+      menuBars[2].classList.remove("rotate-menu-bar-negative");
+      return;
+    }
+    nav.style.zIndex = 1;
+    nav.style.opacity = 0.98;
+    nav.classList.add("nav-open");
+
+    // transform hamburger menu to close icon
+    menuBars[0].classList.add("rotate-menu-bar-positive");
+    menuBars[1].classList.add("remove-menu-bar");
+    menuBars[2].classList.add("rotate-menu-bar-negative");
+  }
+</script>
