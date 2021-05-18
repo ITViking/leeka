@@ -116,6 +116,7 @@ nav {
 
 ul.feature-list {
   list-style-type: none;
+  font-family: monospace;
   margin-bottom: 0;
 }
 
