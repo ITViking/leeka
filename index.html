@@ -12,9 +12,9 @@
 </head>
 <body>
   <button id="hamburger-menu" onclick="toggleHamburgerMenu()">
-    <div class="menu-bar"></div>
-    <div class="menu-bar"></div>
-    <div class="menu-bar"></div>
+    <div class="menu-bar--white"></div>
+    <div class="menu-bar--white"></div>
+    <div class="menu-bar--white"></div>
   </button>
   <nav id="navigation">
     <div id="links">
@@ -29,20 +29,23 @@
       </a>
     </div>
   </nav>
-  <div class="intro">
+  <div class="video-intro white-color">
     <div class="big-intro-text">
-      <p>Leakage</p>
-      <p>Detector</p>
+      <p>The</p>
+      <p>Leakage Detector</p>
     </div>
     <div class="small-intro-text">
-      is an instrument that is
+      is an instrument that
     </div>
+    <video poster="./video-poster.png" playsinline autoplay muted loop>
+      <source src="https://www.dropbox.com/s/gneemmutpvz5zkb/Prototype2.1.mp4?raw=1" type="video/mp4">
+    </video>
   </div>
   <main>
     <div class="features">
-      <p>It is designed to:</p>
+      <p>is designed to:</p>
       <ul class="feature-list">
-        <li>Give real time process controll</li>
+        <li>Give real time process control</li>
         <li>Detect small streams or droplet of liquid</li>
         <li>Be installed after a valve</li>
         <li>Send an alarm if a valve is leaking</li>
