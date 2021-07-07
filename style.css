@@ -23,35 +23,46 @@ p {
   background-color: #f9f9f9;
 }
 
-.hero { 
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  z-index: -1;
+.video-container {
+  display: block;
+  margin: 1px 1px;
 }
 
-/* @media screen and (min-width: 800px) {
-  video {
+video { 
+  margin-left: 5%;
+  width: 90%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (min-width: 800px) {
+  .mobile {
+    display: none;
+  }
+
+  video { 
+    display: block !important;
+    height: 55vh;
+    max-width: 300px;
+  } 
+
+  .detector-image.desktop {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 75%;
+    height: 85vh;
     object-fit: cover;
-    object-position: center;
     z-index: -1;
   }
-} */
+}
 
 .detector-image {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 110%;
+  height: 85vh;
   object-fit: cover;
   z-index: -1;
 }
@@ -143,13 +154,13 @@ nav {
 }
 
 .intro {
-  height: 190px;
+  height: 30%;
   padding-top: 30px;
   padding-left: 30px;
 }
 
 .video-intro {
-  height: 70vh;
+  height: 85vh;
   padding-top: 30px;
   padding-left: 30px;
 }
@@ -313,4 +324,33 @@ div.column > a {
 .c2a-box {
   height: 200px;
   margin-top: 40px;
+}
+
+
+@media screen and (min-width: 800px) {
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  main {
+    margin-top: 40px;
+  }
+
+  .row {
+    justify-content: space-around;
+  }
+
+  .pl-3 {
+    padding-left: 3rem;
+  }
+  
+  .pr-4 {
+    padding-right: 4rem;
+  }  
 }
