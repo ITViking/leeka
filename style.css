@@ -295,6 +295,32 @@ div.column > a {
   box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.2);
 }
 
+.primary-button {
+  border: 1px solid #1C2220;
+  color: #1C2220;
+  font-weight: 700;
+  height: 60px;
+  width: 220px;
+  font-size: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  margin:0 auto;
+  display:block;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem;
+  font-family: 'ubuntu';
+}
+
+.primary-button:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.2);
+}
+
 .secondary-button {
   border: 1px solid #1C2220;
   color: #f9f9f9;
