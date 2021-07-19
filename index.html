@@ -1,123 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" type="text/css">
-  <title>The Leakage Detector</title>
-</head>
-<body>
-  <button id="hamburger-menu" onclick="toggleHamburgerMenu()">
-    <div class="menu-bar--white"></div>
-    <div class="menu-bar--white"></div>
-    <div class="menu-bar--white"></div>
-  </button>
-  <nav id="navigation">
-    <div id="links">
-      <a href="index.html">
-        Home
-      </a>
-      <a href="information.html">
-          In depth
-      </a>
-      <a href="contact.html">
-          Contact
-      </a>
+  <head>
+    <!-- Hotjar Tracking Code for leakagedetector.dk -->
+    <script>
+      (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2511214,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>The Leakage Detector</title>
+  </head>
+  <body>
+    <button id="hamburger-menu" onclick="toggleHamburgerMenu()">
+      <div class="menu-bar--white"></div>
+      <div class="menu-bar--white"></div>
+      <div class="menu-bar--white"></div>
+    </button>
+    <nav id="navigation">
+      <div id="links">
+        <a href="index.html">
+          Home
+        </a>
+        <a href="information.html">
+            In depth
+        </a>
+        <a href="contact.html">
+            Contact
+        </a>
+      </div>
+    </nav>
+    <div class="video-intro white-color">
+      <div class="big-intro-text">
+        <p>The</p>
+        <p>Leakage Detector</p>
+      </div>
+      <div class="small-intro-text">
+        is an instrument that
+      </div>
+      <img class="detector-image mobile" src="./twodetectors.png" alt="">
+      <img class="detector-image desktop" src="./3.jpg" alt="">
     </div>
-  </nav>
-  <div class="video-intro white-color">
-    <div class="big-intro-text">
-      <p>The</p>
-      <p>Leakage Detector</p>
-    </div>
-    <div class="small-intro-text">
-      is an instrument that
-    </div>
-    <img class="detector-image mobile" src="./twodetectors.png" alt="">
-    <img class="detector-image desktop" src="./3.jpg" alt="">
-  </div>
-  <main>
-    <div class="row">
-      <div class="column pl-3">
-        <div class="text-container">
-          <p>is designed to:</p>
-          <ul class="feature-list">
-            <li>Give real time process control</li>
-            <li>Detect small streams or droplet of liquid</li>
-            <li>Be installed after a valve</li>
-            <li>Send an alarm if a valve is leaking</li>
-          </ul>
+    <main>
+      <div class="row">
+        <div class="column pl-3">
+          <div class="text-container">
+            <p>is designed to:</p>
+            <ul class="feature-list">
+              <li>Give real time process control</li>
+              <li>Detect small streams or droplet of liquid</li>
+              <li>Be installed after a valve</li>
+              <li>Send an alarm if a valve is leaking</li>
+            </ul>
+          </div>
+          <div class="base-info text-container">
+            <p>
+              The Leakage Detector is based on a patented leakage detection technology
+            </p>
+            <p>
+              The Leakage Detector is a standalone instrument
+            </p>
+            <p>
+              The Leakage Detector technology can also be build into a valve
+            </p>
+          </div>
         </div>
-        <div class="base-info text-container">
-          <p>
-            The Leakage Detector is based on a patented leakage detection technology
-          </p>
-          <p>
-            The Leakage Detector is a standalone instrument
-          </p>
-          <p>
-            The Leakage Detector technology can also be build into a valve
-          </p>
+        <div class="column pr-4">
+          <div class="video-container">
+            <video poster="./video-poster.jpg" playsinline autoplay muted loop>
+              <source src="https://www.dropbox.com/s/gneemmutpvz5zkb/Prototype2.1.mp4?raw=1" type="video/mp4">
+            </video>
+            <!-- <video poster="./video-poster.jpg" muted> -->
+              <source src="/1.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
       </div>
-      <div class="column pr-4">
-        <div class="video-container">
-          <video poster="./video-poster.jpg" playsinline autoplay muted loop>
-            <source src="https://www.dropbox.com/s/gneemmutpvz5zkb/Prototype2.1.mp4?raw=1" type="video/mp4">
-          </video>
-          <!-- <video poster="./video-poster.jpg" muted> -->
-            <source src="/1.mp4" type="video/mp4">
-          </video>
+      <div class="row">
+        <div class="column">
+          <div class="text-container">
+            <h2>
+              Designed to improve process control
+            </h2>
+            <p>Control and minimize the risk of:</p>
+            <ul class="feature-list">
+              <li>Contamination of end product and cross contamination</li>
+              <li>Spillage and environmental damage</li>
+            </ul>
+            <div class="spacer"></div>
+            <p>Minimizing cost:</p>
+            <ul class="feature-list">
+              <li>Preventive maintenance</li>
+              <li>Cost due to spillage</li>
+            </ul>
+          </div>
+          <div class="c2a-box">
+            <a href="information.html" class="secondary-button">Dive deeper</a>
+            <br>
+            <a href="mailto:info@leakagedetector.dk" class="primary-button">Reach out</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="row">
+    </main>
+    <footer>
       <div class="column">
-        <div class="text-container">
-          <h2>
-            Designed to improve process control
-          </h2>
-          <p>Control and minimize the risk of:</p>
-          <ul class="feature-list">
-            <li>Contamination of end product and cross contamination</li>
-            <li>Spillage and environmental damage</li>
-          </ul>
-          <div class="spacer"></div>
-          <p>Minimizing cost:</p>
-          <ul class="feature-list">
-            <li>Preventive maintenance</li>
-            <li>Cost due to spillage</li>
-          </ul>
-        </div>
-        <div class="c2a-box">
-          <a href="information.html" class="secondary-button">Dive deeper</a>
-          <br>
-          <a href="mailto:info@leakagedetector.dk" class="primary-button">Reach out</a>
-        </div>
+        <a href="index.html">Home</a>
+        <a href="information.html">Deep dive</a>
+        <a href="contact.html">Contact</a>
       </div>
-    </div>
-  </main>
-  <footer>
-    <div class="column">
-      <a href="index.html">Home</a>
-      <a href="information.html">Deep dive</a>
-      <a href="contact.html">Contact</a>
-    </div>
-    <div class="spacer"></div>
-    <div class="column">
-      <p>
-        © JBA Consult ApS 
-      </p>
-      <a href="tel:+4526502504">(+45) 2650 2504</a>
-      <a href="mailto:info@leakagedetector.dk">info@leakagedetector.dk</a>
-    </div>
-  </footer>
-</body>
+      <div class="spacer"></div>
+      <div class="column">
+        <p>
+          © JBA Consult ApS 
+        </p>
+        <a href="tel:+4526502504">(+45) 2650 2504</a>
+        <a href="mailto:info@leakagedetector.dk">info@leakagedetector.dk</a>
+      </div>
+    </footer>
+  </body>
 </html>
 
 <script>
